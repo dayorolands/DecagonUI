@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/task_six"
+        layout="@layout/task_six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/task_five"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/task_five"
+        layout="@layout/task_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/task_six"
+        app:layout_constraintStart_toEndOf="@id/task_four"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/task_four"
+        layout="@layout/task_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/task_five"
+        app:layout_constraintStart_toEndOf="@id/task_three"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/task_three"
+        layout="@layout/task_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/task_four"
+        app:layout_constraintStart_toEndOf="@id/task_two"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/task_two"
+        layout="@layout/task_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/task_three"
+        app:layout_constraintStart_toEndOf="@id/task_one"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/task_one"
+        layout="@layout/task_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/task_two"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
